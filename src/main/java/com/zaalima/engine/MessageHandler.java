@@ -9,7 +9,18 @@ public class MessageHandler {
     }
 
     public void handle(String message) {
-        EventSchema event = EventSchema.fromMessage(message);
+        if (message == null || message.trim().isEmpty()) {
+            System.out.println("Skipping empty or null message");
+            return;
+        }
+
+        EventSchema event;
+        try {
+            event = EventSchema.fromMessage(message);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Failed to parse message: " + e.getMessage());
+            return;
+        }
 
         switch (event.getEventType()) {
             case "TRADE":
