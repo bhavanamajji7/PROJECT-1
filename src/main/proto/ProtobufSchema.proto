@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package com.zaalima.engine;
+
+option java_package = "com.zaalima.engine";
+option java_outer_classname = "ProtobufSchema";
+
+message OrderProto {
+    string orderId = 1;
+    string symbol = 2;
+    string side = 3;
+    double price = 4;
+    int64 quantity = 5;
+    int64 timestamp = 6;
+}
+
+message TradeProto {
+    string tradeId = 1;
+    string symbol = 2;
+    double price = 3;
+    int64 quantity = 4;
+    int64 timestamp = 5;
+}
