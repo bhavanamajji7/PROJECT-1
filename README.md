@@ -36,3 +36,13 @@ Run mvn test to execute all unit, integration, and performance tests.
 ## Notes
 
 KafkaProducer and KafkaConsumer are simplified, in-memory mocks for learning purposes. They do not connect to a real Kafka broker.
+
+## Project Status
+
+All 20 days complete across 4 weeks:
+- Week 1: Core domain models (Trade, MarketData, OrderSide)
+- Week 2: Event streaming pipeline (Kafka mock, EventSchema, MessageHandler)
+- Week 3: Protobuf-style schemas (OrderProto, TradeProto, SchemaRegistry)
+- Week 4: Integration tests, performance tests, documentation, and bug fixes
+
+This concludes the initial build of the trading engine simulation.

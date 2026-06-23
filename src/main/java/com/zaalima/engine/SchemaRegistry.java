@@ -22,6 +22,9 @@ public class SchemaRegistry {
     }
 
     public String getSchemaFor(String eventType) {
+        if (!schemas.containsKey(eventType)) {
+            return "UNKNOWN_SCHEMA";
+        }
         return schemas.get(eventType);
     }
 
