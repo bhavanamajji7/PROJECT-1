@@ -3,19 +3,23 @@ package com.zaalima.engine;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class OrderQueue {
+public class OrderQueue
+    {
 
     private Queue<Order> queue = new LinkedList<>();
 
-    public void enqueue(Order order) {
+    public void enqueue(Order order)
+    {
         queue.offer(order);
     }
 
-    public Order dequeue() {
+    public Order dequeue()
+    {
         return queue.poll();
     }
 
-    public int size() {
+    public int size()
+    {
         return queue.size();
     }
 }
