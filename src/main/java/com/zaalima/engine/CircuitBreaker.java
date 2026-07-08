@@ -1,14 +1,17 @@
 package com.zaalima.engine;
 
-public class CircuitBreaker {
+public class CircuitBreaker
+    {
 
     private boolean open;
 
-    public void openCircuit() {
+    public void openCircuit() 
+    {
         open = true;
     }
 
-    public void closeCircuit() {
+    public void closeCircuit()
+        {
         open = false;
     }
 
