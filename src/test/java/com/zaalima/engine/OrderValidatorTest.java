@@ -3,10 +3,12 @@ package com.zaalima.engine;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class OrderValidatorTest {
+public class OrderValidatorTest 
+{
 
     @Test
-    void testValidOrder() {
+    void testValidOrder()
+    {
 
         OrderValidator validator =
                 new OrderValidator();
